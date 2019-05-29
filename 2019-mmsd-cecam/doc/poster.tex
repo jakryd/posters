@@ -1,4 +1,4 @@
-\documentclass[a0]{a0poster}
+\documentclass[a0,portrait]{a0poster}
 
 \usepackage{multicol}
 \columnsep=100pt
@@ -24,62 +24,150 @@
 
 \begin{document}
 
-\vspace{3cm}
-\begin{minipage}[b]{\linewidth}
-\veryHuge\centering\color{myblue} 
-\textbf{LIGAND UNBINDING VIA MULTIPLE REACTION PATHWAYS}
-\end{minipage}
-\color{Black}\\[1cm]
-\begin{minipage}[b]{0.25\linewidth}
+\begin{minipage}[b]{0.3\linewidth}
 \centering
 \includegraphics[width=25cm]{../fig/umk.png}
-\end{minipage}%
-\begin{minipage}[b]{0.50\linewidth}
-  \centering
-  \huge \textbf{Jakub Rydzewski$^1$ and Omar Valsson$^2$}\\[1cm]
-\Large\textit{$^1$Institute of Physics, Nicolaus Copernicus University,
-  Grudziadzka 5, 87-100 Torun, Poland}\\
-\Large\textit{$^2$Max Planck Institute for Polymer Research, Mainz, Germany}
-\end{minipage}
-\begin{minipage}[b]{0.25\linewidth}
+\end{minipage}\hspace*{4cm}
+\begin{minipage}[b]{0.3\linewidth}
 \centering
-\includegraphics[width=25cm]{../fig/mpip.png}
-\end{minipage}%
+\includegraphics[width=23cm]{../fig/mpip.png}
+\end{minipage}\hspace*{3cm}
+\begin{minipage}[b]{0.3\linewidth}
+\centering
+\includegraphics[width=16cm]{../fig/helmut.jpg}
+\end{minipage}
+
+\vspace{1cm}
+
+\begin{minipage}[b]{\linewidth}
+\veryHuge\centering\color{myblue} 
+\begin{minipage}[b]{\linewidth}
+\textbf{Enhanced Sampling Method for Ligand Unbinding}
+  \end{minipage}
+\end{minipage}
+\color{Black}\\[1cm]
+\begin{minipage}[b]{\linewidth}
+  \huge \textbf{Jakub Rydzewski$^1$}, Omar Valsson$^2$, and Helmut
+  Grubm\"{u}ller$^3$\\[1cm]
+\large\textit{$^1$Institute of Physics, Nicolaus Copernicus University,
+  Grudziadzka 5, 87-100 Torun, Poland}\\
+\large\textit{$^2$Max Planck Institute for Polymer Research, Ackermannweg 10,
+  D-55128 Mainz, Germany}\\
+\large\textit{$^3$Max Planck Institute for Biophysical Chemistry, Am Fassberg 11,
+  37077 Göttingen, Germany}\\
+\end{minipage}
 
 \vspace{1cm}
 
 \begin{multicols}{2}
+\large
+\section*{\huge\centering\color{myblue}How to Find an Exit Tunnel?}
+\vspace*{1cm}
+\begin{minipage}[b]{\linewidth}
+  \centering
+  \includegraphics[width=40cm]{../fig/fig0a.pdf}
+\end{minipage}
 
-\section*{\centering\color{myblue} INTRODUCTION}
+\begin{minipage}[b]{0.5\linewidth}
+  \centering
+  \includegraphics[width=20cm]{../fig/fig2.pdf}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}[b]{0.4\linewidth}
+  \begin{itemize}
+    \bi Enhanced sampling and non-convex optimization;
+    \bi Biasing toward the minimum of the loss function;
+    \bi Loss function describes interactions in a ligand-protein system;
+  \end{itemize}
+  \vspace*{1cm}
+\end{minipage}
 
-\begin{itemize}
-	\bi asdasdadsads
-\end{itemize}
+\section*{\huge\centering\color{myblue}Slow-Onset Inhibitor Unbinding}
+\vspace*{1cm}
+\begin{minipage}[b]{\linewidth}
+  \centering
+  \includegraphics[width=38cm]{../fig/fig_6.pdf}
+\end{minipage}
 
-\section*{\centering\color{myblue} METHODOLOGY}
+\noindent Structural representation of intermediate unbinding configurations along the RPs
+which atomistically characterize the dissociation of hupA (shown as sticks)
+along (a) pwf and (b) pws.  (pwf) or through the partially disorderedΩ-loop
 
-\section*{\centering\color{myblue} CONCLUSIONS}
+\begin{minipage}[b]{0.5\linewidth}
+  \centering
+  \includegraphics[width=20cm]{../fig/fig_7.pdf}
+\end{minipage}
+\hspace*{1cm}
+\begin{minipage}[b]{0.4\linewidth}
+  \begin{itemize}
+    \bi Free-energy profiles along hupA dissociation pathways pwf and pws;
+    \bi The error bars are calculated as standard errors from the well-tempered
+      metadynamics simulations.
+  \end{itemize}
+  \vspace*{6cm}
+\end{minipage}
+
+\section*{\huge\centering\color{myblue}Are Transient Pathways Heterogeneous?}
+\vspace*{1cm}
+\begin{minipage}[b]{\linewidth}
+  \centering
+  \includegraphics[width=40cm]{../fig/figx.pdf}
+\end{minipage}
+
+\noindent Reaction pathways of the benzene unbinding from the lysozyme L99A mutant
+classified infive clusters.  In the upper panel the bias potential is shown as
+a function of the minimized loss function.  The bottom panel depicts
+atomistically the reaction pathways.
+
+\section*{\huge\centering\color{myblue}\texttt{maze}: A Module for Plumed 2}
+\vspace*{1cm}
+\begin{minipage}[b]{\linewidth}
+  \centering
+  \includegraphics[width=20cm]{../fig/maze-icon.png}
+\end{minipage}
+\vspace*{1cm}
+
+\noindent\texttt{maze} is a code that implements enhanced sampling methods for simulating 
+the reaction pathways of ligand unbinding. It is made as a module for Plumed 2, an
+engine for free energy calculations of atomistic systems.
+\vspace*{1cm}
+
+\begin{minipage}[b]{0.5\linewidth}
+  \centering
+  \includegraphics[width=12cm]{../fig/github.png}\\[1cm]
+  \large Fork \texttt{maze} from Github.
+\end{minipage}
+\begin{minipage}[b]{0.5\linewidth}
+  \centering
+  \includegraphics[width=12cm]{../fig/gitter.png}\\[1cm]
+  \large Ask us on Gitter.
+\end{minipage}
 
 \color{myblue}
 \begin{thebibliography}{6}%
 \color{black}
-\bibitem{1} J. Rydzewski \& W. Nowak. \textit{Phys. Life Rev.} doi.org/10.1016/j.plrev.2017.03.003 (2017).
-\bibitem{2} W. Nowak. \textit{Handbook of Computational Chemistry} 2nd ed. J. Leszczyński, Springer (2017).
-\bibitem{3} J. Rydzewski \& W. Nowak. \textit{J. Chem. Phys.} 143, 09B617\_1 (2015).
-\bibitem{4} J. Rydzewski \& W. Nowak. \textit{J. Chem. Theory Comp.} 12, 2110 (2016).
-\bibitem{5} J. Rydzewski \& W. Nowak. \textit{Sci. Rep.}, submitted (2017).
-\bibitem{6} J. Rydzewski, R. Jakubowski, W. Nowak \& H. Grubmueller, in preparation (2017).
+\bibitem{1} J. Rydzewski, \dots, H. Grubm\"{u}ller. \textit{J. Chem. Theory Comput.} 14, 2843 (2018).
+\bibitem{2} J. Rydzewski, O. Valsson, \textit{J. Chem. Phys.} 150 (2019).
+\bibitem{3} J. Rydzewski, \textit{Submitted} (2019).
 \end{thebibliography}
 \color{black}
 
 \section*{\color{myblue} Contact}
 \begin{itemize}
-		\bi JR -- jr@fizyka.umk.pl
-		\bi WN -- wiesiek@fizyka.umk.pl
+    \bi Jakub Rydzewski \texttt{jr@fizyka.umk.pl}
 \end{itemize}
 
 \section*{\color{myblue} Acknowledgments}
-JR acknowledges funding (grants no. 2015/19/N/ST3/02171 and 2016/20/T/ST3/00488)) from National Science Centre, Poland and UMK grants 2406-F, 2539-F. The results were obtained using Interdisciplinary Centre for Modern Technologies computational facilities, NCU Toruń, Poland.
+We thank R. Jakubowski, W. Nowak, and M. Parrinello for useful discussions.
+This work is supported by the National Science Centre, Poland (grants
+2016/20/T/ST3/00488 and 2016/23/B/ST4/01770). The MD simulations were computed
+using facilities of Interdisciplinary Centre of Modern Technologies, Nicolaus
+Copernicus University, Poland.
+\\
+\\
+All the data and PLUMED input files required to reproduce the results reported in
+this study will be available on PLUMED-NEST (\texttt{www.plumed-nest.org}), the public
+repository of the PLUMED consortium. 
 
 \end{multicols}
 \end{document}
