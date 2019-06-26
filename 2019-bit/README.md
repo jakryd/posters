@@ -1,9 +1,7 @@
-### Mainz Materials Simulation Days 2019
+### Bioinformatics in Toruń 2019
 ----------------------------------------
-Exploring Complex Free Energy Landscapes: Structure/Function Formation, 
-Multiscales, and Long-timescales
 
-CECAM-DE-SMSM, Max Planck Institute for Polymer Research, Mainz, Germany
+Institute of Physics, Nicolaus Copernicus University
 
-June 5, 2019 – June 7, 2019
+June 27, 2019 – June 29, 2019
 
